@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---- title ----->
+    <title>Gomoto | Food Delivery Website</title>
+
+    <!--- swiper cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <!---- customer css file  ----->
+    <link rel="stylesheet" href="./style.css">
+
+    <!---- boxicon cdn link ----->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+
+    <!----header section start ----->
+    <header class="header">
+        <div class="top-header">
+            <div class="logo">
+                <img src="./images/logo/logo_1x.png" alt="">
+            </div>
+            <div class="navBar">
+                <a href="#" class="active" >home</a>
+                <a href="#">about us</a>
+                <a href="#">shop</a>
+                <a href="#">blog</a>
+                <a href="#">contacts</a>
+                <i class='bx bx-x' id="close"></i>
+            </div>
+            <div class="others">  
+                <span><i class='bx bxs-phone' ></i> 091-345 6785</span>
+                <a href="#"><i class='bx bxs-user' ></i></a>
+                <a href="#"><i class='bx bxs-shopping-bag' ></i></a>
+                <div class="search-box">
+                    <input type="search" id="search" placeholder="enter here">
+                    <i class='bx bx-search-alt-2' id="search-btn"></i>
+                </div>
+                <i class='bx bx-menu' id="menuBar"></i>
+            </div>
+        </div>
+        <div class="home">
+            <div class="content">
+                <h1>express <br>
+                <span>home delivery</span>
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam earum incidunt iste repellendus sapiente officiis repellat, quisquam, placeat consequuntur ratione ipsa ipsum laborum vel.</p>
+
+                <button class="btn">read more</button>
+            </div>
+            <div class="image">
+                <img src="./images/home/slider-courier-mask.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <!---- type section start ----->
+    <div class="type">
+        <div class="type-row">
+            <div class="col-1">
+                <img src="./images/type/t_01.jpg" alt="">
+                <span>fastfood</span>
+            </div>
+            <div class="col-1">
+                <img src="./images/type/t_02.png" alt="">
+                <span>raw meat</span>
+            </div>
+            <div class="col-1">
+                <img src="./images/type/t_03.png" alt="">
+                <span>asian food</span>
+            </div>
+            <div class="col-1">
+                <img src="./images/type/t_04.jpg" alt="">
+                <span>hot pizza</span>
+            </div>
+        </div>
+    </div>
+
+    <!---- popular section start ----->
+    <section class="popular">
+        <div class="main-topic">
+            <span class="sm-topic">quick pick</span>
+            <h2>popular goods</h2>
+
+            <div class="topics">
+                <button class="tablinks active" id="fastfood">fastfood</button>
+                <button class="tablinks" id="hot">hot pizza</button>
+                <button class="tablinks" id="assian">assian food</button>
+                <button class="tablinks" id="rawmeat">raw meat</button>
+            </div>
+        </div>
+        
+        <!-------- fast food ------------->
+        <div class="tabContent" id="fastfood">
+            <div class="content-row">
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/fast/f_01.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>cheeseburger with salad</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$19.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/fast/f_02.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>black gamburger with fishcake</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$13.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/fast/f_03.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>royal cheeseburger with bacon</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$24.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/fast/f_04.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>classic bacon hamburger</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$11.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------- hot pizza ------------->
+        <div class="tabContent" id="hot">
+            <div class="content-row">
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/hot/h_01.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>shrimp & olive pizza</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$19.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/hot/h_02.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>seafood pizza</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$13.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/hot/h_03.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>thin cheese pizza</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$24.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/hot/h_04.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>pizza with mushrooms</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$11.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/hot/h_05.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>vegetarian pizza</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$14.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/hot/h_06.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>pizza with mussels</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$10.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/hot/h_07.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>pizza with parmesan</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$7.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/hot/h_08.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>cpizza assorted</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$9.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------- assian food ------------->
+        <div class="tabContent" id="assian">
+            <div class="content-row">
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/asian/m_01.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>octopus roll</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$19.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/asian/m_02.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>roll with unagi</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$13.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/asian/m_03.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>civilian face shield</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$24.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/asian/m_04.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>roll with tuna</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$11.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/asian/m_05.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>shrimp roll</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$14.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/asian/m_06.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>roll with crab</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$10.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/asian/m_07.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>pickled eel roll</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$7.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/asian/m_08.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>red fish roll</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$9.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------- raw meat ------------->
+        <div class="tabContent" id="rawmeat">
+            <div class="content-row">
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/raw/r_01.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>herb chicken fillet</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$19.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/raw/r_02.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>chicken filled with salad</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$13.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/raw/r_03.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>boiled pork with spices</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$24.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="./images/popular/raw/r_04.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <h4>raw chicken with herbs</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint.</p>
+                        <span>$11.00</span>
+                        
+                        <button class="add-cart">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---- care section start -->
+    <section class="care">
+        <div class="image">
+            <img src="./images/care/client-bg.jpg" alt="">
+        </div>
+        <div class="content">
+            <h2>sit at home <span> <br>we will take care</span></h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure praesentium dolorum recusandae sint quod pariatur consequuntur harum ipsum mollitia. Eum labore harum culpa? Laudantium, odit repellendus omnis distinctio animi vero.</p>
+
+            <div class="care-icon">
+                <div class="col-3">
+                    <img src="./images/care/d_01.png" alt="">
+                    <h4>fast deliivery <br>in 1 hour</h4>
+                </div>
+                <div class="col-3">
+                    <img src="./images/care/d_02.png" alt="">
+                    <h4>amazing <br>mobile app</h4>
+                </div>
+                <div class="col-3">
+                    <img src="./images/care/d_03.png" alt="">
+                    <h4>wide <br>coverage map</h4>
+                </div>
+                <div class="col-3">
+                    <img src="./images/care/d_04.png" alt="">
+                    <h4>more than <br>150 couriers</h4>
+                </div>
+            </div>
+
+            <div class="button">
+                <button class="btn">read more </button>
+            </div>
+        </div>
+    </section>
+
+    <!---- recommend section start -->
+    <section class="recommend">
+        <div class="main-topic">
+            <span class="sm-topic">our recommendations</span>
+            <h2>cafes & restaurants</h2>
+        </div>
+
+        <div class="main-recommend">
+            <div class="col-4">
+                <div class="image">
+                    <img src="./images/recomend/rest_01.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h4>burger house</h4>
+                    <span><i class='bx bxs-calendar'></i>monday - saturday</span>
+                    <span><i class='bx bx-alarm' ></i>09.00 - 18.00</span>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="col-6">
+                    <div class="image_one">
+                        <img src="./images/recomend/rest_02.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Restaurant Monaco</h5>
+                        <span><i class='bx bxs-calendar'></i>monday - saturday</span>
+                        <span><i class='bx bx-alarm' ></i>09.00 - 18.00</span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="image_one">
+                        <img src="./images/recomend/rest_03.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>ribs and beer</h5>
+                        <span><i class='bx bxs-calendar'></i>monday - saturday</span>
+                        <span><i class='bx bx-alarm' ></i>09.00 - 18.00</span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="image_one">
+                        <img src="./images/recomend/rest_04.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Sushiteria</h5>
+                        <span><i class='bx bxs-calendar'></i>monday - saturday</span>
+                        <span><i class='bx bx-alarm' ></i>09.00 - 18.00</span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="image_one">
+                        <img src="./images/recomend/rest_05.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>happy grill cafe</h5>
+                        <span><i class='bx bxs-calendar'></i>monday - saturday</span>
+                        <span><i class='bx bx-alarm' ></i>09.00 - 18.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button class="btn">view more </button>
+        </div>
+    </section>
+
+    <!---- hottest pizza section start -->
+    <section class="pizza">
+        <div class="main-pizza">
+            <div class="col-7">
+                <h1>always <br> <span>the hottest <br> pizza</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis consequatur, dicta atque itaque numquam. Dolorum dolorem esse rerum quis.</p>
+
+                <button class="btn">get pizza</button>
+            </div>
+            <div class="col-8">
+                <img src="./images/pizza/pizza-smoke.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!---- client section start -->
+    <section class="client">
+        <div class="main-topic">
+            <span class="sm-topic">testimonials</span>
+            <h2>why our clients choose us</h2>
+        </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <i class='bx bxs-quote-alt-right'></i>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam exercitationem laboriosam harum id laborum vel blanditiis officiis saepe, consequuntur consequatur, quasi pariatur cupiditate laudantium ipsum, voluptate tempora voluptatibus! Distinctio, nulla.</p>
+                    <div class="client-box">
+                        <img src="./images/client/client-1.jpg" alt="">
+                        <h4>cassie carleton</h4>
+                        <span>designer</span>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class='bx bxs-quote-alt-right'></i>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam exercitationem laboriosam harum id laborum vel blanditiis officiis saepe, consequuntur consequatur, quasi pariatur cupiditate laudantium ipsum, voluptate tempora voluptatibus! Distinctio, nulla.</p>
+                    <div class="client-box">
+                        <img src="./images/client/client-2.jpg" alt="">
+                        <h4>cassie carleton</h4>
+                        <span>designer</span>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class='bx bxs-quote-alt-right'></i>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam exercitationem laboriosam harum id laborum vel blanditiis officiis saepe, consequuntur consequatur, quasi pariatur cupiditate laudantium ipsum, voluptate tempora voluptatibus! Distinctio, nulla.</p>
+                    <div class="client-box">
+                        <img src="./images/client/client-3.jpg" alt="">
+                        <h4>cassie carleton</h4>
+                        <span>designer</span>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class='bx bxs-quote-alt-right'></i>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam exercitationem laboriosam harum id laborum vel blanditiis officiis saepe, consequuntur consequatur, quasi pariatur cupiditate laudantium ipsum, voluptate tempora voluptatibus! Distinctio, nulla.</p>
+                    <div class="client-box">
+                        <img src="./images/client/client-4.jpg" alt="">
+                        <h4>cassie carleton</h4>
+                        <span>designer</span>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class='bx bxs-quote-alt-right'></i>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam exercitationem laboriosam harum id laborum vel blanditiis officiis saepe, consequuntur consequatur, quasi pariatur cupiditate laudantium ipsum, voluptate tempora voluptatibus! Distinctio, nulla.</p>
+                    <div class="client-box">
+                        <img src="./images/client/client-5.jpg" alt="">
+                        <h4>cassie carleton</h4>
+                        <span>designer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!---- app section start -->
+    <div class="app">
+        <div class="main-app">
+            <div class="col-9">
+                <h1>Get More With <span>Our Application</span></h1>
+                <p class="phr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non quo sit totam iusto omnis culpa laborum doloremque nulla ipsam laboriosam rerum suscipit, consequuntur provident aperiam praesentium nisi, molestiae id illum.</p>
+                <div class="others">
+                        <p><em>01</em>follow delivery status</p>
+                        <p><em>02</em>order from any location</p>
+                        <p><em>03</em>get important notices</p>
+                </div>
+                <div class="image">
+                    <img src="./images/app/app-1.png" alt="">
+                    <img src="./images/app/app-2.png" alt="">
+                </div>
+            </div>
+            <div class="col-10">
+                <img src="./images/app/map.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!----subscribe section start -->
+    <section class="subscribe">
+        <div class="main-sub">
+            <div class="sub_one">
+                <img src="./images/icon/img.png" alt="">
+                <div class="content">
+                    <h4>get the latest news and coffers</h4>
+                    <h2>subscribe to our newsletter</h2>
+                </div>
+            </div>
+            <div class="sub_one">
+                <input type="text" placeholder="your email">
+                <button>subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!---- blog section start -->
+    <section class="blog">
+        <div class="main-topic">
+            <span class="sm-topic">our blog</span>
+            <h2>recent articles</h2>
+        </div>
+
+        <div class="main-blog">
+            <div class="blog-col-one">
+                <div class="image">
+                    <img src="./images/blogs/blog_01.jpg" alt="">
+                </div>
+                <div class="blog-content">
+                    <a href="#" class="btn-one">food Delivery</a>
+                    <h3>all city cafes and restaurants switchesd to delivery mode</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorum reprehenderit omnis voluptatem laborum dolore eaque voluptates ratione numquam qui.</p>
+
+                    <div class="others">
+                        <span><i class='bx bxs-calendar' ></i>december 9 2023</span>
+                        <span><i class='bx bx-message-rounded-dots' ></i>1</span>
+                        <span><i class='bx bxs-eyedropper' ></i>1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-col-two">
+                <div class="blog-one">
+                    <div class="image">
+                        <img src="./images/blogs/blog_02.jpg" alt="">
+                    </div>
+                    <div class="blog-content">
+                        <a href="#" class="btn-one">food delivery</a>
+                        <h4>creative packaging as a successful marketing move</h4>
+                        <div class="others">
+                            <span><i class='bx bxs-calendar' ></i>december 9 2023</span>
+                            <span><i class='bx bx-message-rounded-dots' ></i>1</span>
+                            <span><i class='bx bxs-eyedropper' ></i>1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-one">
+                    <div class="image">
+                        <img src="./images/blogs/blog_03.jpg" alt="">
+                    </div>
+                    <div class="blog-content">
+                        <a href="#" class="btn-one">food delivery</a>
+                        <h4>creative packaging as a successful marketing move</h4>
+                        <div class="others">
+                            <span><i class='bx bxs-calendar' ></i>december 9 2023</span>
+                            <span><i class='bx bx-message-rounded-dots' ></i>1</span>
+                            <span><i class='bx bxs-eyedropper' ></i>1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-one">
+                    <div class="image">
+                        <img src="./images/blogs/blog_04.jpg" alt="">
+                    </div>
+                    <div class="blog-content">
+                        <a href="#" class="btn-one">food delivery</a>
+                        <h4>creative packaging as a successful marketing move</h4>
+                        <div class="others">
+                            <span><i class='bx bxs-calendar' ></i>december 9 2023</span>
+                            <span><i class='bx bx-message-rounded-dots' ></i>1</span>
+                            <span><i class='bx bxs-eyedropper' ></i>1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button class="btn">read more</button>
+        </div>
+    </section>
+
+    <!---- footer section start -->
+    <section class="footer">
+        <div class="footer-row">
+            <div class="contact">
+                <img src="./images/contact/phone.jpg" alt="">
+                <i class='bx bxs-phone' ></i>
+                <div class="number">
+                    <span>call us to make order now</span>
+                    <h3>90-500-28-999</h3>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="./images/logo/logo_1x.png" alt="">
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, iusto. Modi sequi iusto ad nostrum rerum fugiat eveniet vero soluta.</p>
+            <div class="social">
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-instagram' ></i>
+                <i class='bx bxl-twitter' ></i>
+                <i class='bx bxl-youtube' ></i>
+            </div>
+        </div>
+
+        <p class="footer-bottom">&copy; All Rights Reseerved By <span>CodeSlaves</span></p>
+    </section>
+
+
+
+    <!---- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!---- customer js file -->
+    <script src="./script.js"></script>
+    
+</body>
+</html>

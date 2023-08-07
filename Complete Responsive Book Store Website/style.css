@@ -1,0 +1,581 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background: url(./image/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #089da1;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+
+section nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+section nav li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+section nav li a{
+    color: #000;
+    text-decoration: none;
+    list-style: none;
+}
+
+section nav li a:hover{
+    color: #089da1;
+}
+
+/*---social icon-------*/
+
+.social-icon i{
+    margin: 0 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.social-icon i:hover{
+    color: #089da1;
+    transform: scale(1.1);
+}
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 10%;
+}
+
+section .main h1{
+    position: relative;
+    font-size: 55px;
+    top: 80px;
+    left: 25px;
+}
+
+section .main h1 span{
+    color: #089da1;
+}
+
+section .main p{
+    width: 650px;
+    text-align: justify;
+    line-height: 22px;
+    position: relative;
+    top: 125px;
+    left: 25px;
+}
+
+section .main .main-tag .main-btn{
+    background: #089da1;
+    padding: 10px 20px;
+    position: relative;
+    top: 200px;
+    left: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+section .main img{
+    width: 780px;
+    position: relative;
+    top: 90px;
+    left: 20px;
+}
+
+/*------- services -----*/
+.sevices{
+    width: 100%;
+    height: auto;
+    margin: 35px 0;
+}
+
+.sevices .services-box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sevices .services-box .services-card{
+    text-align: center;
+    width: 310px;
+    height: auto;
+    box-shadow: 0px 0px 8px #089da1;
+    padding: 15px 10px;
+}
+
+.sevices .services-box .services-card  i{
+    color: #089da1;
+    font-size: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.sevices .services-box .services-card h3{
+    margin-bottom: 10px;
+}
+
+/*---- about -------*/
+.about{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .about-image img{
+    width: 800px;
+}
+
+.about .about-tag p{
+    line-height: 22px;
+    width: 650px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.about .about-tag .about-btn{
+    padding: 10px 20px;
+    background: #089da1;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    top: 50px;
+}
+
+/*------featured-books------*/
+
+.featured-books{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+
+.featured-books h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+
+.featured-books .featured-book-box{
+    width: 95%;
+    height: 60vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x: scroll;
+}   
+
+.featured-books .featured-book-box .featured-book-card{
+    width: 250px;
+    height: 420px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+}
+
+.featured-books .featured-book-box .featured-book-card:hover{
+    box-shadow: 0 0 5px #089da1;
+}
+
+
+.featured-books .featured-book-box .featured-book-card .featured-book-img img{
+    width: 150px;
+    height: 230px;
+}
+
+.featured-books .featured-book-box .featured-book-card .featured-book-tag h2{
+    margin: 12px;
+}
+
+.featured-books .featured-book-box .featured-book-card .featured-book-tag .writer{
+    color: #919191;
+}
+
+.featured-books .featured-book-box .featured-book-card .featured-book-tag .categories{
+    color: #089da1;
+    margin-top: 8px;
+}
+
+.featured-books .featured-book-box .featured-book-card .featured-book-tag .book-price{
+    margin-top: 8px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.featured-books .featured-book-box .featured-book-card .featured-book-tag del{
+    font-weight: 100;
+    padding: 0 15px;
+}
+
+.featured-books .featured-book-box .featured-book-card .featured-book-tag .f-btn{
+    padding: 8px 20px;
+    border: 2px solid #089da1;
+    text-decoration:none ;
+    color: #000;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #089da1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-button{
+    background-color: red;
+    background-size: 10px 10px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-button:hover{
+    background-color: #3b09dd;
+}
+
+::-webkit-scrollbar-track-piece{
+    background-color: aquamarine;
+    border-radius: 10px;
+    border: 1px solid red;
+}
+
+/*---------arrivals--------*/
+
+.arrivals{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 35px;
+}
+
+.arrivals h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.arrivals .arrivals-box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 0;
+}
+
+.arrivals .arrivals-box .arrivals-card{
+    width: 250px;
+    height: 340px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+}
+
+.arrivals .arrivals-box .arrivals-card:hover{
+    box-shadow: 0 0 5px #089da1;
+}
+
+.arrivals .arrivals-box .arrivals-image{
+    width: 150px;
+    height: 220px;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+.arrivals .arrivals-box .arrivals-image img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   transition:0.3s;
+}
+
+.arrivals .arrivals-box .arrivals-card:hover .arrivals-image img{
+    transform: scale(1.1);
+}
+
+.arrivals .arrivals-box .arrivals-card .arrivals-tag p{
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.arrivals .arrivals-box .arrivals-card .arrivals-tag .arrivals-icon{
+    color: #089da1;
+    margin-bottom: 18px;
+}
+
+.arrivals .arrivals-box .arrivals-card .arrivals-tag .arrivals_btn{
+    padding: 8px 20px;
+    border: 2px solid #089da1;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+}
+
+/*-----reviews -------*/
+
+.reviews{
+    width: 100%;
+    height: auto;
+}
+
+.reviews h1{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 55px;
+}
+
+.reviews .review-box{
+    width: 95%;
+    height: 50vh;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews .review-box .review-card{
+    width: 400px;
+    height: 320px;
+    box-shadow: 0 0 8px #089da1;
+    padding: 15px;
+    margin: 0 12px;
+}
+
+.reviews .review-box .review-card i{
+    float: right;
+    font-size: 120px;
+    position: relative;
+    bottom: 20px;
+    color: #eaeaea;
+}
+
+.reviews .review-box .review-card .card-top img{
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.reviews .review-box .review-card .card p{
+    margin: 10px 0 10px 0;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.reviews .review-box .review-card .card .review-icon i{
+    font-size: 16px;
+    float: left;
+    margin-top: 20px;
+    color: #089da1;
+    padding: 0 1px;
+}
+
+/*----banner--*/
+
+.banner{
+    width: 100%;
+    height: 50vh;
+    background-image: url(./image/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .banner_btn{
+    padding: 8px 20px;
+    background: #089da1;
+    color: #fff;
+    position: relative;
+    top: 70%;
+    left: 7%;
+    text-decoration: none;
+}
+
+/*------blog-------*/
+.blog{
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
+}
+
+.blog h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.blog .blog-box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.blog .blog-box .blog-card{
+    margin: 0 auto;
+    width: 450px;
+    height: auto;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+.blog .blog-box .blog-card .blog-img{
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.blog .blog-box .blog-card .blog-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog .blog-box .blog-card .blog-tag{
+    padding: 20px;
+}
+
+.blog .blog-box .blog-card .blog-tag h2{
+    color: #089da1;
+}
+
+.blog .blog-box .blog-card .blog-tag p{
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.blog .blog-box .blog-card .blog-tag .blog-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #089da1;
+    cursor: pointer;
+}
+
+/*-----footer --------*/
+footer{
+    width: 100%;
+    background: #eaeaea;
+}
+
+footer .footer-main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer-main .tag{
+    margin: 10px 0;
+}
+
+footer .footer-main .tag img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+footer .footer-main .tag p{
+    width: 250px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+footer .footer-main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #000;
+}
+
+footer .footer-main .tag a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+footer .footer-main .tag i{
+    margin-right: 10px;
+}
+
+footer .footer-main .tag .social-link i{
+    margin: 0 5px;
+}
+
+footer .footer-main .tag .search-bar{
+    width: 230px;
+    height: 30px;
+    background: rgb(202,202,202);
+    border-radius: 25px;
+}
+
+footer .footer-main .tag .search-bar input{
+    width: 200px;
+    padding: 2px 0;
+    position: relative;
+    top: 17%;
+    left: 6%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    background: none;
+}
+
+footer .footer-main .tag .search-bar button{
+    padding: 7px 15px;
+    background: #089da1;
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #000;
+}
+
+footer .end span{
+    color: #089da1;
+    font-weight: 600;
+}

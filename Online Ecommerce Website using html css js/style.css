@@ -1,0 +1,911 @@
+/*--- dancing script font ---*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 40px;
+    background-color: #3ba2e6;
+}
+
+.header .contact{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.header .contact .normal{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+.header .contact .normal span{
+    padding-left: 12px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.header .contact .normal span i{
+    padding-right: 5px;
+}
+
+.header .contact .social-contact{
+    display: flex;
+    text-align: center;
+    align-items: right;
+}
+
+.header .contact .social-contact a i{
+    margin: 0 5px;
+    padding: 6px 8px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 50px;
+    color: #f38609;
+    transition: .42s;
+}
+
+.header .contact .social-contact a i:hover{
+    background-color: #f38609;
+    color: #ffffff;
+}
+
+#navbar{
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    overflow: hidden;
+    z-index: 1000;
+    box-shadow: 0 0 8px #ccc;
+}
+
+.top-nav{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 22px;
+    overflow: hidden;
+    z-index: 1000;
+    background-color: #ffffff;
+}
+
+.top-nav .navmenu{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.top-nav .top-navbar ul{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.top-nav .top-header a,
+.top-nav .top-header a span{
+    font-family: 'Dancing Script', cursive;
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.top-nav .top-header a span{
+    color: #3ba2e6;
+}
+
+.top-nav .top-navbar ul li a{
+    font-size: 18px;
+    color: #000;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-right: 11px;
+    padding-left: 11px;
+}
+
+.top-nav .top-navbar ul li a:hover{
+    color: #3ba2e6;
+}
+
+.top-nav .top-icons{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.top-nav .top-icons i{
+    font-size: 18px;
+    padding-right: 19px;
+    cursor: pointer;
+    transition: .42s;
+}
+
+.top-nav .top-icons i:hover{
+    color: #3ba2e6;
+    transform: scale(1.1);
+}
+
+.top-nav #menuBar{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/*---- main-menu---------*/
+.main-menu{
+    width: 100%;
+    height: auto;
+    background-color:#f2f2f2
+}
+
+.main-menu .menu-row{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+.main-menu .menu-row .menu-col{
+    position: relative;
+    top: 15%;
+    left: 25%;
+}
+
+.main-menu .menu-row .menu-col h2{
+    font-size: 68px;
+    color: #00a9;
+}
+
+.main-menu .menu-row .menu-col p{
+    font-size: 17px;
+    padding: 30px 0;
+}
+
+.main-menu .menu-row .menu-col .shop-btn{
+    margin-top: 20px;
+    padding: 12px 50px;
+    font-size: 18px;
+    outline: none;
+    background-color: #000;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .42s;
+}
+
+.main-menu .menu-row .menu-col .shop-btn:hover{
+    background-color: #3ba2e6;
+    border: 1px solid #3ba2e6;
+}
+
+.main-menu .menu-row img{
+    position: relative;
+    left: 40%;
+    width: 250px;
+}
+
+section{
+    width:100%;
+    height: auto;
+    padding: 30px 0;
+    text-align: center;
+}
+
+/*----shop-----*/
+
+#shop h2{
+    font-size: 34px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+#shop p{
+    padding: 30px 440px;
+    text-align: center;
+}
+
+.items-row{
+    width: 67%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.items-row .items-col{
+    border: 1px solid #ccc;
+    box-shadow: 0 0 8px #ccc;
+    width: 300px;
+}
+
+.items-row .items-col .items-img{
+    object-fit: cover;
+    object-position: center;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 60px;
+    
+}
+
+.items-row .items-col .items-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.items-row .items-col .items-img .card{
+    width: 100%;
+    background: red;
+    color: #ffffff;
+    text-align: center;
+    padding: 9px 0;
+    font-size: 18px;
+    height: 0px;
+    display: none;
+    cursor: pointer;
+    transition: .42s; 
+}
+
+.items-row .items-col:hover .items-img .card{
+   height: 50px;
+   display: block;
+}
+
+.items-row .items-col .content{
+    border-top: 4px solid red;
+    margin-top: -4px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.items-row .items-col .content h4{
+    font-size:24px;
+    color:#000;
+}
+
+.items-row .items-col .content span{
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.shop-btn{
+    margin: 60px 0;
+    padding: 9px 40px;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 550px;
+    outline: none;
+    background: red;
+    border: none;
+    cursor: pointer;
+    transition: .42s;
+}
+
+.shop-btn:hover{
+    background-color: #3ba2e6;
+}
+
+.sticky + section{
+    padding-top: 60px;
+}
+
+.sticky{  
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+
+}
+
+ /*---- carts list ------*/
+
+#cart h2{
+    font-size: 34px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    margin-top: 40px;
+    text-align: center;
+    color: #000;
+}
+
+.cart-row{
+    width: 67%;
+    margin: 0 auto;
+    
+}
+
+.cart-row .cart-col{
+    padding-top: 30px;
+    text-align: left;
+}
+
+.cart-row .cart-col table {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    height: 600px;
+}
+
+.cart-row .cart-col table tr td{
+    padding: 8px 0;
+    font-size: 18px;
+    color: #000;
+}
+
+.cart-row .cart-col table tr td .cart-img{
+    display: flex;
+    align-items: center;
+    text-align: middle;
+}
+
+.cart-row .cart-col table tr td .cart-img img{
+   width: 180px;
+  padding-right: 20px;
+}
+
+.cart-row .cart-col table tr td input{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-indent: 20px;
+}
+
+.cart-row .cart-col table tr td button{
+    padding: 9px 30px;
+    font-size: 18px;
+    background-color: red;
+    border: 1px solid red;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .42s;
+}
+
+.cart-row .cart-col table tr td button:hover{
+    background-color: #3ba2e6;
+    border: 1px solid #3ba2e6;
+}
+
+.login-row{
+    width: 67%;
+    margin: 0 auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 40px 0;
+}
+
+.login-row .login-col{
+    height: 80vh;
+}
+
+.login-row .login-col.login-part_one{
+    background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(23, 131, 220, 0.5));
+}
+
+.login-row .login-col .login-content{
+    position: relative;
+    top:25%;
+    text-align: center;
+    padding: 35px;
+}
+
+.login-row .login-col .login-content h3{
+    font-size: 24px;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+
+.login-row .login-col .login-content p{
+    color: #ffffff;
+    padding-bottom: 35px;
+}
+
+.login-row .login-col .login-content .register-btn{
+    padding: 12px 30px;
+    font-size: 17px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .42s;
+}
+
+.login-row .login-col .login-content .register-btn:hover{
+    background-color: #3ba2e6;
+}
+
+.login-row .login-col.login-part_two{
+    padding: 40px 20px;
+    text-align: justify;
+}
+
+.login-row .login-col.login-part_two .login-header{
+    padding: 20px 0;
+    font-size: 20px;
+    color: #000;
+}
+
+.login-row .login-col.login-part_two .login-details input[type="text"],
+.login-row .login-col.login-part_two .login-details input[type="password"],
+.login-row .login-col.login-part_two .login-details button {
+    width:100%;
+    padding: 14px;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #000;
+}
+
+.login-row .login-col.login-part_two .login-details input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+.login-row .login-col.login-part_two .login-details [type="password"]{
+    margin-bottom: 16px;
+}
+
+.login-row .login-col.login-part_two .login-details button{
+    border: 1px solid #3ba2e6;
+    margin-bottom: 10px;
+    color: #3ba2e6;
+    background: transparent;
+    cursor: pointer;
+    transition: .42s;
+}
+
+.login-row .login-col.login-part_two .login-details button:hover{
+    color: #ffffff;
+    background-color: #3ba2e6;
+}
+
+/*--- choice watch---*/
+#contact h1{
+    text-align: center;
+    font-size: 38px;
+    padding-bottom: 80px;
+}
+.choice-row{
+    width: 67%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.choice-row .choice-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-bottom: 40px;
+}
+
+.choice-row .choice-col .choice-content{
+    position: relative;
+    top: 25%;
+    padding:0 10px;
+    text-align: justify;
+}
+
+.choice-row .choice-col .choice-content h1{
+    font-size: 38px;
+    color: #000;
+}
+
+.choice-row .choice-col .choice-content p{
+    font-size: 16px;
+    padding: 35px 0;
+}
+
+.choice-row .choice-col .choice-content .choice-btn{
+    width: 200px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #f38609;
+    border: 1px solid #f38609;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.choice-row .choice-col .choice-content .choice-btn:hover{
+    background-color: #3ba2e6;
+    border: 1px solid #3ba2e6;
+}
+
+.choice-row .choice-col img{
+    width: 500px;
+}
+
+/*---- contact ---*/
+
+.contact-row{
+    width: 67%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    text-align: justify;
+}
+
+.contact-row .contact-col table{
+    width:550px;
+}
+
+.contact-row .contact-col input,
+.contact-row .contact-col textarea{
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact-row .contact-col .send-btn{
+    padding: 9px 60px;
+    margin-top: 30px;
+    background: #f38609;
+    border: 1px solid #f38609;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .42s;
+}
+
+.contact-row .contact-col .send-btn:hover{
+    background-color: #3ba2e6;
+    border: 1px solid #3ba2e6;
+}
+
+.contact-row .contact-col .contact-details{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contact-row .contact-col .contact-details .fa{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.contact-row .contact-col .contact-details h4{
+    font-size: 18px;
+    color: #000;
+    line-height: 20px;
+    padding-top: 15px;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    padding: 60px 0;
+    background-color: #eee;
+}
+
+@media(max-width:1180px){
+
+    /*---- popular items ------*/
+    .items-row{
+        width: 95%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #shop p{
+        padding: 30px 240px;
+    }
+}
+
+@media(max-width:990px){
+
+    .main-menu .menu-row img{
+        left: 35%;
+        width: 200px;
+    }
+
+    .main-menu .menu-row .menu-col{
+        top: 10%;
+    }
+
+    .main-menu .menu-row .menu-col h2{
+        font-size: 52px;
+    }
+    
+    .main-menu .menu-row .menu-col p{
+        font-size: 15px;
+        padding: 20px 0;
+    }
+    
+    .main-menu .menu-row .menu-col .shop-btn{
+        padding: 10px 40px;
+    }
+
+    /*---- popular items ------*/
+    .items-row{
+        width: 75%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cart-row .cart-col table tr td .cart-img{
+        display: block;
+    }
+
+     /*---- carts list ------*/
+     .cart-row .cart-col table tr td input{
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        text-indent: 10px;
+    }
+
+    .cart-row .cart-col table tr td .cart-img img{
+        display: block;
+    }
+
+    .cart-row .cart-col table tr td button{
+        padding: 6px 20px;   
+    }
+
+    /*---- login ----*/
+    .login-row .login-col.login-part_two{
+        padding: 10px 20px;
+    }
+    
+    .login-row .login-col.login-part_two .login-header{
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    .login-row .login-col.login-part_two .login-details input[type="text"],
+    .login-row .login-col.login-part_two .login-details input[type="password"],
+    .login-row .login-col.login-part_two .login-details button {
+        font-size: 16px;
+    }
+
+    .login-row {
+        width: 80%;
+    }
+
+    /*---- chice watch ---*/
+    .choice-row .choice-col img{
+        width: 350px;
+        height: 600px;
+        padding-top: 150px;
+    }
+
+     /*---- contact ---*/
+     .contact-row .contact-col table{
+        width:380px;
+    }
+}
+
+@media(max-width:780px){
+
+    .main-menu .menu-row img{
+        left: 35%;
+        width: 170px;
+    }
+
+    .main-menu .menu-row .menu-col h2{
+        font-size: 38px;
+    }
+    
+    .main-menu .menu-row .menu-col .shop-btn{
+        padding: 10px 40px;
+        font-size: 16px;
+    }
+
+    .top-nav .navmenu{
+        display: block;
+        position: fixed;
+        right: 100%;
+        top: 16.5%;
+        width: 240px;
+        height: 100vh;
+        border: 1px solid #ffffff;
+        background-color: #ffffff;
+        overflow: hidden;
+        z-index: 1000; 
+    }
+
+    .top-nav .navmenu.open{
+        right: 0;
+    }
+    
+    .top-nav .top-navbar ul{
+        display: block;
+        margin: 30px 0;
+    }
+
+    .top-nav .top-navbar ul li{
+        margin-top: 30px;
+    }
+    
+    .top-nav .top-icons i{
+        position: relative;
+        left: 32%;
+    }
+
+    .top-nav #menuBar{
+        display: block;
+    }
+    
+    .header .contact .normal{
+        display: none;
+    }
+
+    #navbar{
+        height: 100px;
+        background-color: #ffffff;
+    }
+
+    /*---- popular items ------*/
+    .items-row{
+        width: 65%;
+        grid-template-columns: 1fr;
+    }
+   
+    #shop p{
+        padding: 30px 50px;
+    }
+
+    /*---- carts list ------*/
+    .cart-row .cart-col table tr td{
+        font-size: 14px;
+    }
+
+    .cart-row .cart-col table tr td .cart-img img{
+        width: 100px;
+     }
+
+     .cart-row .cart-col table tr td button{
+        padding: 6px 20px;   
+        font-size: 14px;
+    }
+     
+    .cart-row{
+        width: 80%;
+        margin: 0 auto;       
+    }
+
+    .shop-btn{
+        position: absolute;
+        left: 18%;
+    }
+
+    /*---login---*/
+    .login-row {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+      /*---- chice watch ---*/
+    .choice-row .choice-col{
+        grid-template-columns: 1fr;
+    }
+
+    .choice-row .choice-col img{
+        width:100%;
+    }
+
+      /*---- contact ---*/
+    .contact-row{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-row .contact-col table{
+        width:100%;
+    }
+}
+
+@media(max-width:540px){
+
+    .main-menu .menu-row img{
+        display: none;
+    }
+
+    .main-menu .menu-row .menu-col h2{
+        font-size: 29px;
+        width: 250px;
+    }
+
+    .main-menu .menu-row .menu-col p{
+        width: 250px;
+        text-align: justify;
+    }
+    
+    .main-menu .menu-row .menu-col .shop-btn{
+        padding: 8px 30px;
+        font-size: 14px;
+        width: 200px;
+        position: relative;
+        left: 0;
+    }
+
+    .main-menu{
+        width: 100%;
+        height: 60vh;
+        background-color:#f2f2f2;
+    }
+    
+    .main-menu .menu-row{
+        width: 95%;
+        margin: 0 auto;
+    }
+       /*---- popular items ------*/
+    .items-row{
+        width: 75%;
+        grid-template-columns: 1fr;
+    }
+
+    #shop p{
+        padding: 30px 50px;
+    }
+
+    .items-row .items-col{
+        width: 220px;
+    }
+    
+    .items-row .items-col .items-img{
+        width: 220px;
+        height: 200px;     
+    }
+
+    .items-row .items-col .content h4{
+        font-size:20px;
+    }
+
+    /*----login----*/
+    .login-row .login-col .login-content{
+        top:20%;
+        padding: 25px;
+    }
+    
+    .login-row .login-col .login-content h3{
+        font-size: 18px;
+    }
+    
+    .login-row .login-col .login-content .register-btn{
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+
+    .login-row .login-col{
+        height: 40vh;
+    }
+
+    .choice-row .choice-col .choice-content h1{
+        font-size: 28px;
+        color: #000;
+    }
+
+    #contact h1{
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+
+    .footer{
+        font-size: 14px;
+    }
+
+}

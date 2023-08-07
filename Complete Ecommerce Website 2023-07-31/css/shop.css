@@ -1,0 +1,281 @@
+/*======= shop page design ========*/
+.home{
+    margin-top: 4rem;
+    width: 100%;
+    border-bottom: 0.1rem solid #cac8d6;
+}
+
+.home p{
+    padding: 1.5rem 1rem 0; 
+}
+
+.home p a{
+    color: #292258;
+}
+
+.carts{
+    padding: 1rem 7%;
+    width: 100%;
+    background: #fff;
+}
+
+.carts .cart-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.1rem solid #cac8d6;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+}
+
+.carts .cart-header h2{
+    color: #292258;
+    font-weight: 500;
+}
+
+.carts .cart-header span{
+    color: #292258;
+    text-transform: uppercase;
+}
+
+.carts .main-carts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.carts .main-carts .cart-col-one{
+    flex: 1 1 40rem;
+}
+
+.carts .main-carts .cart-col-one .col-1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    border: 0.1rem solid #cac8d6;
+    padding: 1rem;
+}
+
+.carts .main-carts .cart-col-one .col-1 .image{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border-right:  0.1rem solid #cac8d6;
+}
+
+.carts .main-carts .cart-col-one .col-1 .image img{
+    width: 150px;  
+}
+
+.carts .main-carts .cart-col-one .col-1 .image .content{
+    padding-right: 2rem;
+}
+
+.carts .main-carts .cart-col-one .col-1 .image .content h3{
+    color: #292258;
+    font-size: 1.1rem;
+}
+
+.carts .main-carts .cart-col-one .col-1 .image .content p{
+    margin: 0.5rem 0 1rem;
+    color: #292258;
+}
+
+.carts .main-carts .cart-col-one .col-1 .image .content p span{
+    text-decoration: line-through;
+    color: #292258;
+    margin-right: 0.5rem;
+}
+
+.carts .main-carts .cart-col-one .col-1 .image .content button{
+    width: 100px;
+    font-size: 1rem;
+    color: #292258;
+    cursor: pointer;
+}
+
+.close-btn button{
+   display: flex;
+   align-items: center;
+   margin-left: 1rem;
+   padding: 0.4rem 2rem;
+   font-size: 1rem;
+   cursor: pointer;
+   background-color: transparent;
+   outline: none;
+   color:#292258;
+   text-transform: uppercase;
+}
+
+.close-btn button i{
+    font-size:1rem;
+    margin-right: 0.3rem;
+    color: #292258;
+}
+
+.close-btn button:hover,
+.close-btn button i:hover{
+    background: #292258;
+    color: #fff;  
+}
+
+.carts .main-carts .cart-col-two{
+    flex: 1 1 10rem;
+}
+
+.carts .main-carts .cart-col-two .sub-cart{
+    border: 0.1rem solid #cac8d6;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.carts .main-carts .cart-col-two .sub-cart h3{
+    color: #292258;
+    font-size: 1.4rem;
+}
+
+.carts .main-carts .cart-col-two .sub-cart .col-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.carts .main-carts .cart-col-two .sub-cart button{
+    text-transform: uppercase;
+    margin: 1rem 0;
+    padding: 0.3rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+}  
+
+.carts .main-carts .cart-col-two .sub-cart button:hover{
+    background: #292258;
+    color: #fff;
+}
+
+.carts .main-carts .cart-col-two .sub-cart .inputBox input{
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+@media(max-width:898px){
+    .carts .main-carts .cart-col-one .col-1 .image{
+        border-right:none;
+    }
+
+    .close-btn button{
+        margin-left: 0;   
+     }
+}
+
+@media(max-width:768px){
+    .home{
+        margin-top: 2rem;
+    }
+
+    .carts{
+        padding: 1rem 5%;
+    } 
+}
+
+@media(max-width:500px){
+    .carts .cart-header{
+        display: block;
+    }
+
+    .carts .main-carts .cart-col-one .col-1 .image .content button{
+       display: block;
+       margin-bottom: 0.5rem;
+    }
+}
+
+/*========== wish list page design ===========*/
+.wishlist-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2.5rem;
+    margin: 2rem 0;
+}
+
+.wishlist-row .wish-col{
+    border: 0.1rem solid rgba(0,0,0,0.5);
+    background: #fff;
+
+}
+
+.wishlist-row .wish-col .image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.wishlist-row .wish-col .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.wishlist-row .wish-col .content h4{
+    color: #292258;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.wishlist-row .wish-col .content p{
+    width: 100%;
+    color: #292258;
+    font-size: 0.9rem;
+    border-bottom: 0.1rem solid rgba(0,0,0,0.5);
+    padding: 0.2rem 0 1rem;
+}
+
+.wishlist-row .wish-col .content p span{
+    text-decoration: line-through;
+    margin-right: 0.5rem;
+}
+
+.wishlist-row .wish-col .content p em{
+    color: #ff0077;
+}
+
+.wishlist-row .wish-col .content button{
+    margin: 0.7rem 0;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #292258;
+    cursor: pointer;
+}
+
+.wishlist-row .wish-col .content button:hover{
+    border: 0.1rem solid rgba(0,0,0,0.3);
+}
+
+@media(max-width:991px){
+    .wishlist-row{
+        grid-template-columns: 1fr 1fr 1fr;
+    }    
+}
+
+@media(max-width:768px){
+    .wishlist-row{
+        grid-template-columns: 1fr 1fr;
+    }    
+}
+
+@media(max-width:500px){
+    .wishlist-row{
+        grid-template-columns: 1fr;
+    }    
+}
